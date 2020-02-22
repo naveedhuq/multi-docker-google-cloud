@@ -11,6 +11,6 @@ docker push naveedhuq/multi-server:$SHA
 docker push naveedhuq/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployments server=naveedhuq/multi-server:$SHA
-kubectl set image deployments/client-deployments client=naveedhuq/multi-client:$SHA
-kubectl set image deployments/worker-deployments worker=naveedhuq/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=naveedhuq/multi-server:$SHA
+kubectl set image deployments/client-deployment client=naveedhuq/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=naveedhuq/multi-worker:$SHA
