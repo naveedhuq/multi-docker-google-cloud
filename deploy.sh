@@ -1,6 +1,6 @@
-docker build -t naveedhuq/multi-client:latest -t naveedhuq/multi-client:$SHA -f ./client/Docketfile ./client
-docker build -t naveedhuq/multi-server:latest -t naveedhuq/multi-server:$SHA -f ./server/Docketfile ./server
-docker build -t naveedhuq/multi-worker:latest -t naveedhuq/multi-worker:$SHA -f ./worker/Docketfile ./worker
+docker build -t naveedhuq/multi-client:latest -t naveedhuq/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t naveedhuq/multi-server:latest -t naveedhuq/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t naveedhuq/multi-worker:latest -t naveedhuq/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push naveedhuq/multi-client:latest
 docker push naveedhuq/multi-server:latest
